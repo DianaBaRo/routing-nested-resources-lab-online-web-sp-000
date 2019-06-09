@@ -627,3 +627,13 @@ Completed 200 OK in 46ms (Views: 21.2ms | ActiveRecord: 0.6ms)
             FROM sqlite_temp_master
             WHERE name='index_songs_on_artist_id' AND type='index'
 [0m
+Started GET "/" for 93.115.195.88 at 2019-06-09 18:04:24 +0000
+Cannot render console from 93.115.195.88! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  Rendered artists/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 170ms (Views: 164.6ms | ActiveRecord: 0.7ms)
+
+
