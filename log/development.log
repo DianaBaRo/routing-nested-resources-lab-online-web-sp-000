@@ -726,3 +726,14 @@ Processing by ArtistsController#index as HTML
 Completed 200 OK in 156ms (Views: 151.2ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/artists/2/songs" for 93.115.195.88 at 2019-06-09 18:28:47 +0000
+Cannot render console from 93.115.195.88! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"2"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?[0m  [["artist_id", 2]]
+  Rendered songs/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 33ms (Views: 17.0ms | ActiveRecord: 1.1ms)
+
+
